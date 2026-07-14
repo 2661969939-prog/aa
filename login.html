@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数据收集平台登录</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="login-body">
+    <main class="login-page">
+      <section class="login-hero" aria-label="平台登录">
+        <img class="hospital-seal" src="./assets/beijing-obgyn-logo.png" alt="首都医科大学附属北京妇产医院院徽" />
+        <h1>北京妇产医院<br />卵巢肿瘤影像数据收集平台</h1>
+        <div class="login-card">
+          <div class="login-brand-panel">
+            <img class="login-logo" src="./assets/beijing-obgyn-logo.png" alt="北京妇产医院院徽" />
+            <strong>首都医科大学附属北京妇产医院</strong>
+            <span>Beijing Obstetrics and Gynecology Hospital, Capital Medical University</span>
+          </div>
+          <form class="login-form" action="./index.html?authed=1">
+            <h2>用户登录 / USER LOGIN</h2>
+            <label>
+              用户名
+              <input name="username" value="管理员" autocomplete="username" />
+            </label>
+            <label>
+              密码
+              <input name="password" value="12345678" type="password" autocomplete="current-password" />
+            </label>
+            <div class="login-warning">首次使用请先注册账号，再进入病例数据工作台</div>
+            <button class="primary login-submit" type="submit">登录</button>
+            <a class="form-link" href="./register.html">没有账号，先注册</a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
